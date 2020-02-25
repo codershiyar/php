@@ -1,13 +1,17 @@
+<?php 
 
-<?php
-/* $firstName = "Coder";
+// .       يكون بديل +  يستخدم لجمع بيانات النصية 
+// .=      يكون بديل =+  يستخدم لجمع بيانات النصية
+
+$firstName = "Coder";
 $lastName = "Shiyar";
-$name = $firstName ." ".  $lastName;
-echo $name; */
+$name = " ";
+$name .= $firstName . " ".$lastName;
+echo $name;
 
-$number1 = 20;
-$number1 .= 10;
-echo $number1;
+$number1 = 10;
+$number2 = 5;
+
+echo $number1.= $number2;
+
 ?>
-
-
