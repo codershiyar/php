@@ -1,27 +1,33 @@
-<?php 
-// -- 
-// ==	Equal	                    متساوية
-// ===	Identical	                 مطابقة	
-// !=	Not equal	            غير متساوية
-// <>	Not equal		        غير متساوية
-// !==	Not identical	         غير مطابقة  
-// >	Greater than	            أكبر من
-// <	Less than		            أصغر من
-// >=	Greater than or equal to	أكبر من او يساوي
-// <=	Less than or equal to	    أصغر من او يساوي
-// <=>
 
+<?php
+// $getValue = 300<=>200;
+// echo $getValue . "<br>";
+// if($getValue==-1){
+// echo "تحقق الشرط";
+// }else{
+//     echo "لم يتحقق الشرط";
+// }
 
-
-$point_student ="70 dfsdfo";
-
-if($point_student >=90){
-echo  "علامة الطالب ممتازة";
-}elseif($point_student>=70){
-  echo  "علامة الطالب جيد جدا";
-}elseif($point_student>=50){
-  echo  "علامة الطالب وسط";
-}elseif($point_student<50){
-  echo  "علامة الطالب ضعيفة";
+$fruit = "تفاح";
+if($fruit == "تفاح"){
+echo "سعر تفاح ب 10 دولار";
+}elseif($fruit=="برتقال"){
+echo "سعر برتقال 3 دولار";
 }
+elseif($fruit=="موز"){
+echo "سعر موز 2 دولار";
+}
+else{
+    echo "للأسف لا يتوفر هذه فاكهة لدينا";
+}
+
 ?>
+
+
+
+
+
+
+
+
+
