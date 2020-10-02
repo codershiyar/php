@@ -1,19 +1,19 @@
 <?php 
+ // طريقة إنشاء كلاس
 class App{
-
-    public $appName = "Coder Shiyar";
-    public $appVersion = 1.0;
-
+  
+   // طريقة إنشاء كونستروكتور كلاس
     function __construct()
-    {
-        
+    { 
+    //    $this->printMessage();
     }
-
-    function getTime(){
-        return date("H:i");
-    }
-    function printAppName(){
-        echo '<h1>'. $this->appName.'</h1>';
+    
+    function printMessage($title){
+        echo  $title ;
     }
 }
+ // طريقة إنشاء اوبجكت كلاس
+$app = new App();
+$app->printMessage('<h1>Coder Shiyar</h1>');
+
 ?>

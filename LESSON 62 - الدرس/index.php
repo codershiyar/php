@@ -1,19 +1,22 @@
 <?php 
  // طريقة إنشاء كلاس
 class App{
-  
+   protected $country = 'Kurdistan'; 
+  public $age = '20';  
+  private $name = "Coder Shiyar";
    // طريقة إنشاء كونستروكتور كلاس
-    function __construct($img , $title)
-    { 
-        echo $img;
-        echo $title;
+    function __construct()
+    {   
+       echo $this->name;
+        // echo 'Hi from Class App';
     }
 
 }
  // طريقة إنشاء اوبجكت كلاس
 
-$app = new App('<img src="https://codershiyar.com/img/logo.jpg" width="200" />',
-" <h1>Coder Shiyar</h1>");
-
+$app = new App();
+// echo $app->age;
+// // echo $app->country;
+// echo $app->name;
 
 ?>
