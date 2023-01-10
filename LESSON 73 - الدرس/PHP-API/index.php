@@ -10,14 +10,20 @@ header("Access-Control-Max-Age: 3600");
 // اعطى صلاحيات للمتصفح لتبادل البيانات دون ظهور اخطاء
 header("Access-Control-Allow-Headers: *");
 
-// file_get_contents('php://input');
-$data = file_get_contents('php://input');
-$data = json_decode($data);
-// print_r($data);
+if(isset($_GET['username']) && isset($_GET['key'])){
+    if($_GET['username'] === "codershiyar" && $_GET['key'] == "1234" ){
 
-if(isset($data->key)){
-
-print_r(json_encode(["password"=>"test1234","email"=>"test@gmail.com"]));
+        $data = ["Name" => "Coder Shiyar" , "Website"=>"https://codershiyar.com"];
+        $JSON_data = json_encode($data);
+        print_r($JSON_data);
+    }else{
+        $data = ["message" => "خطا في طلب" ];
+        $JSON_data = json_encode($data);
+        print_r($JSON_data);
+    }
 }else{
-    print_r(json_encode(["message"=>"خطا"]));
+    $data = ["message" => "خطا في طلب" ];
+    $JSON_data = json_encode($data);
+    print_r($JSON_data);
 }
+
